@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./apache-tomcat-5.5.15/bin/catalina.sh $1

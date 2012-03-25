@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ant -f photoshare.xml all
+cp photoshare/photoshare.war apache-tomcat-5.5.15/webapps 
+

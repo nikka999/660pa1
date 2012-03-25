@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/photoshare" reloadable="true">
+    <Resource name="jdbc/postgres"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://localhost:5432/nikka999"
+              username="nikka999"
+              password="rdw5d"
+              logAbandoned="true"
+              removeAbandoned="true"
+              removeAbandonedTimeout="10"
+              maxActive="20"
+              maxIdle="10"
+              maxWait="-1"/>
+
+
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="org.postgresql.Driver"
+           connectionURL="jdbc:postgresql://localhost:5432/nikka999"
+           connectionName="nikka999"
+           connectionPassword="rdw5d"
+           userTable="&quot;Users&quot;" userNameCol="email"
+           userCredCol="password"
+           userRoleTable="&quot;Users&quot;" roleNameCol="role_name"/>
+</Context>
